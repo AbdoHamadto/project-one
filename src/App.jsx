@@ -8,6 +8,8 @@ function App() {
   if (localStorage.getItem("dateData")) {
     const str = localStorage.getItem("dateData")
     person =  JSON.parse(str)
+  } else {
+    person = []
   }
 
   const [personData, setPersonData] = useState(person)
